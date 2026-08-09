@@ -1,0 +1,12 @@
+# Ambiente virtual
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# PyCharm
+.idea/
+
+# Banco de dados local
+db.sqlite3
