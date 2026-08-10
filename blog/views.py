@@ -4,17 +4,29 @@ from django.shortcuts import render
 # Create your views here.
 def blog(request):
     print("blog do app")
+
+    context ={
+        "text": "Olá blog",
+        }
+
     return render(
         request,
-        "blog/index.html"
+        "blog/index.html",
+        context
     )
 
 
 def exemplo(request):
     print("exemplo")
+
+    context ={
+        "text": "Olá exemplo",
+        }
+
     return render(
             request,
-            "blog/exemplo.html"
+            "blog/exemplo.html",
+            context,
         )
 
 
